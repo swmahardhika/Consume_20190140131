@@ -1,3 +1,4 @@
+
 <?php
 include 'cek.php';
 ?>
@@ -32,7 +33,7 @@ include 'cek.php';
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="#">Tambah Baju</a>
-            <a class="n" href="">LogOut</a>
+            <a class="nav-link" href="">LogOut</a>
           </div>
         </div>
       </div>
@@ -45,6 +46,11 @@ include 'cek.php';
         <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#tambahData">
             Tambah Data
         </button>
+        <div class="input-group">
+          <input type="search" class="form-control rounded" placeholder="merek" aria-label="merek" aria-describedby="search-addon" />
+          <button type="button" class="btn btn-outline-primary" id="merek">search</button>
+        </div>
+
         <!--Modal tambah data-->
         <div class="modal fade" id="tambahData" tabindex="-1" aria-labelledby="tambahDataLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -107,7 +113,7 @@ include 'cek.php';
                       <a href="detail.php?id=<?php echo $data['id_baju']; ?>" class= "btn btn-primary btn-sm text-white">DETAIL</a>
                       <a href="print.php?id=<?php echo $data['id_baju']; ?>" class="btn btn-success btn-sm text-white">PRINT</a>
                       <a href="edit.php?id=<?php echo $data['id_baju']; ?>" class= "btn btn-warning btn-sm text-white">EDIT</a>
-                      <a href="delete.php?id=<?php echo $data['id_baju']; ?>" class= "btn btn-danger btn-sm mt-1" onclick="return confirm('Anda yakin akan menghapus data karyawan ini?')">HAPUS</a>
+                      <a href="delete.php?id=<?php echo $data['id_baju']; ?>" class= "btn btn-danger btn-sm mt-1" onclick="return confirm('Anda yakin akan menghapus data baju ini?')">HAPUS</a>
                   </td>
               </tr>
             <?php
