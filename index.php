@@ -1,5 +1,5 @@
 <?php
-include "login.php";
+include 'cek.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,8 @@ include "login.php";
     <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Data Karyawan</title>
+
+    <title>Data Baju</title>
 </head>
 <body>
     <!--Navbar-->
@@ -31,7 +32,7 @@ include "login.php";
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="#">Tambah Baju</a>
-            <a class="nav-link" href="login.php">LogOut</a>
+            <a class="n" href="">LogOut</a>
           </div>
         </div>
       </div>
